@@ -15,28 +15,30 @@ padding:0px;
 -moz-box-shadow: 0px 4px 19px #000;
 -webkit-box-shadow: 0px 4px 19px #000;
 box-shadow: 0px 4px 19px #000;
-
--moz-border-radius: 20px;
--webkit-border-radius: 20px;
--khtml-border-radius: 20px;
-border-radius: 20px;
 }
 
 #videoText{
 width:100%;
-background: #222;
 margin-top:25px;
 
 border: 1px dashed #666;
 
--moz-border-radius: 20px;
--webkit-border-radius: 20px;
--khtml-border-radius: 20px;
-border-radius: 20px;
+-moz-border-radius: 16px;
+-webkit-border-radius: 16px;
+-khtml-border-radius: 16px;
+border-radius: 16px;
 
 -moz-box-shadow: 0px 0px 17px #000;
 -webkit-box-shadow: 0px 0px 17px #000;
 box-shadow: 0px 0px 17px #000;
+
+background: -moz-linear-gradient(top,  rgba(89,89,89,1) 0%, rgba(56,56,56,1) 9%, rgba(37,37,37,1) 34%, rgba(28,28,28,1) 46%, rgba(0,0,0,0.79) 82%, rgba(0,0,0,0.68) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(89,89,89,1)), color-stop(9%,rgba(56,56,56,1)), color-stop(34%,rgba(37,37,37,1)), color-stop(46%,rgba(28,28,28,1)), color-stop(82%,rgba(0,0,0,0.79)), color-stop(100%,rgba(0,0,0,0.68))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(89,89,89,1) 0%,rgba(56,56,56,1) 9%,rgba(37,37,37,1) 34%,rgba(28,28,28,1) 46%,rgba(0,0,0,0.79) 82%,rgba(0,0,0,0.68) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(89,89,89,1) 0%,rgba(56,56,56,1) 9%,rgba(37,37,37,1) 34%,rgba(28,28,28,1) 46%,rgba(0,0,0,0.79) 82%,rgba(0,0,0,0.68) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(89,89,89,1) 0%,rgba(56,56,56,1) 9%,rgba(37,37,37,1) 34%,rgba(28,28,28,1) 46%,rgba(0,0,0,0.79) 82%,rgba(0,0,0,0.68) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(89,89,89,1) 0%,rgba(56,56,56,1) 9%,rgba(37,37,37,1) 34%,rgba(28,28,28,1) 46%,rgba(0,0,0,0.79) 82%,rgba(0,0,0,0.68) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#595959', endColorstr='#ad000000',GradientType=0 ); /* IE6-9 */
 }
 
 #videoText p, #videoText ul li{
