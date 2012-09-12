@@ -3,28 +3,60 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Video Landing Page</title>
+
+<link rel="stylesheet" type="text/css" href="mainStyle.css" />
+<script>
+var ua = navigator.userAgent.toLowerCase();
+
+var mobi = /iphone|ipod|android|windows ce|blackberry|palm|((?=.*webkit)(?=.*series60))|((?=.*webkit)(?=.*symbian))/;
+
+if(ua.search(mobi) > -1) {
+var video = document.getElementById('video');
+video.addEventListener('click',function(){
+this.play();
+},false);
+}
+else {
+var clicked = false;
+var video = document.getElementById('video');
+video.addEventListener('click',function(){
+if(clicked == false){
+this.play();
+clicked = true;
+}
+},false);// handle desktop-like devices
+}
+</script>
 </head>
 
 <body>
 
+
 <div id="videoWrapper">
 
-<video id="video" autobuffer height="280″ width="320″ controls="controls" poster="poster.jpg">
-<source src="MVI_0010.webm" type="video/webm">
-<source src="MVI_0010.ogv" type="video/ogg">
-<source src="MVI_0010.mp4″>
-<source src="MVI_0010.m4v">
-<object type="application/x-shockwave-flash" data="images/10-technician.swf" width="320″ height="280″>
-	<param name="movie" value="images/10-technician.swf" />
+<video id="video" autobuffer height="280" width="320" controls="controls" poster="playLarge.png">
+<source src="medical.ogv" type="video/ogg">
+<source src="medical.mp4">
+<object type="application/x-shockwave-flash" data="medical.flv" width="320" height="280">
+	<param name="movie" value="medical.flv" />
 	<param name="wmode" value="transparent" />
 </object>
 </video>
 
 <div id="videoText">
-
+<p>This is a section title</p>
+<p>This is a small description of this section</p>
+<p>My custom list title</p>
+<ul>
+<li>My list item number one is first on the list</li>
+<li>second on the list, item number two</li>
+<li>My list item number three is last</li>
+</ul>
 </div>
 <!-- end of videoText div -->
+
 </div>
+<!-- end of videoWrapper div -->
 
 </body>
 </html>
