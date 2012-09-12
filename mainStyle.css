@@ -1,14 +1,76 @@
-html, body {margin:0px; padding:0px;}
+html, body {margin:0px; padding:0px; background:url(media/rep.gif)}
 
 #videoWrapper{
-width:600px;
-height:500px;
+width:70%;
+min-width: 315px;
 margin:0 auto;
-backgrund: black;	
+padding-top:1.7%;
+}
+
+#videoWrapper video, #videoWrapper object{
+width:100%;
+margin:0 auto;
+padding:0px;
+
+-moz-box-shadow: 0px 4px 19px #000;
+-webkit-box-shadow: 0px 4px 19px #000;
+box-shadow: 0px 4px 19px #000;
+
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+border-radius: 20px;
 }
 
 #videoText{
-width: 450px;
-height: 100%;
-background: #333;
+width:100%;
+background: #222;
+margin-top:25px;
+
+border: 1px dashed #666;
+
+-moz-border-radius: 20px;
+-webkit-border-radius: 20px;
+-khtml-border-radius: 20px;
+border-radius: 20px;
+
+-moz-box-shadow: 0px 0px 17px #000;
+-webkit-box-shadow: 0px 0px 17px #000;
+box-shadow: 0px 0px 17px #000;
+}
+
+#videoText p, #videoText ul li{
+margin:0px;
+color: #999;
+list-style-type: circle;
+font-family: Verdana, Geneva, sans-serif;
+letter-spacing:1px;
+}
+
+#videoText p:first-of-type{
+font-size:16px;
+font-weight:bold;
+width: 210px;
+margin: 0 auto;
+padding-top:10px;
+}
+
+#videoText p:nth-of-type(2){
+font-size:13px;
+font-style: italic;
+width: 340px;
+margin: 0 auto;
+padding-top:1px;
+margin-bottom: 15px;
+}
+
+#videoText p:nth-of-type(2):hover{
+color:#888;
+}
+
+#videoText p + p + p{
+font-size:14px;
+position: relative;
+padding-top:1px;
+margin-bottom: 15px;
 }
